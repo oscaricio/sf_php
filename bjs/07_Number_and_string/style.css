@@ -7,3 +7,10 @@
     text-align: end;
     font-size: x-large;
 }
+
+.card {
+    background-color: #000;
+}
+.row.no-gutters .col {
+    padding: 1px;
+}
