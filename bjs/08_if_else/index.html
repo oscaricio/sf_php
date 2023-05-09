@@ -12,9 +12,9 @@
 <div class="container">
     <div class="row game-card align-items-center">
         <div class="col col-md-4 offset-md-4">
-            <div class="card text-center">
+            <div class="card text-center show border-dark">
                 <div class="card-header">
-                    <p class="m-0">Вопрос №<span id="orderNumberField">5</span></p>
+					<h5 class="card-title m-0">Вопрос №<span id="orderNumberField">5</span></h5>
                 </div>
                 <div class="card-body">
                     <div class="row no-gutters">
@@ -31,11 +31,53 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-link" id="btnRetry">Заново</button>
+                    <button class="btn btn-outline-primary btn-lg" id="btnRetry">Заново</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="modal modal-minvalue" data-next-modal="modal-maxvalue">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="form-group">
+					<label for="minVal" class="col-form-label">Минимальное значение для игры:</label>
+					<input type="text" class="form-control" id="minVal" value="0">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-ok">Ок</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal modal-maxvalue" data-next-modal="modal-rules">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="form-group">
+					<label for="maxVal" class="col-form-label">Максимальное значение для игры:</label>
+					<input type="text" class="form-control" id="maxVal" value="100">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-ok">Ок</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal modal-rules">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<p>Загадайте любое целое число от <span id="minValStr">0</span> до <span id="maxValStr">100</span>, а я его угадаю</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary btn-ok">Ок</button>
+			</div>
+		</div>
+	</div>
 </div>
 <script src="script.js"></script>
 </body>

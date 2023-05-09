@@ -2,3 +2,12 @@
     height: 100vh;
     font-family: 'Open Sans', monospace;
 }
+.card {
+    display: none;
+}
+.card.show {
+    display: block;
+}
+.card-header h5 {
+    font-weight: bold;
+}
