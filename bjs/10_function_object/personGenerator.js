@@ -160,7 +160,7 @@ const personGenerator = {
     },
 
     randomDate: function () {
-        let month = this.person.month,
+        let month = this.person.birthMonth,
             minDate = 1,
             maxDate = 31;
 
