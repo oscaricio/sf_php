@@ -165,7 +165,7 @@ const personGenerator = {
             maxDate = 31;
 
         if (month === 'февраля') maxDate = 28;
-        else if (['апреля', 'июня', 'сентября', 'октября'].indexOf(month) !== -1) maxDate = 30;
+        else if (['апреля', 'июня', 'сентября', 'ноября'].indexOf(month) !== -1) maxDate = 30;
 
         return this.randomIntNumber(maxDate, minDate);
     },
